@@ -11,11 +11,7 @@ from datasets.imagenet import imagenet
 from datasets.episode import episode
 
 # ft
-<<<<<<< HEAD
 for year in ['seed1', 'seed2','seed3', 'seed4','seed5', 'seed6','seed7', 'seed8','seed9', 'seed10','seed0','custom_finetune']:
-=======
-for year in ['seed1', 'seed2','seed3', 'seed4','seed5', 'seed6','seed7', 'seed8','seed9', 'seed10','seed0','custom_finetune']:
->>>>>>> v_0.0.1
   for split in ['1shots','2shots','3shots','5shots','10shots','30shots']:
     for n in ['coco']:
         name = 'coco_ft_{}_{}'.format(year, split)
@@ -23,15 +19,9 @@ for year in ['seed1', 'seed2','seed3', 'seed4','seed5', 'seed6','seed7', 'seed8'
     for n in ['pascal']:
         name = 'pascal_ft_{}_{}'.format(year, split)
         __sets[name] = (lambda split=split, year=year: pascal_split(split, year))
-<<<<<<< HEAD
         '''
         our custom fintuning dataset dir : supports/coco/{finetune}/{3shots}_image_novel
         '''
-=======
-        '''
-        our custom fintuning dataset dir : supports/coco/{finetune}/{3shots}_image_novel
-        '''
->>>>>>> v_0.0.1
     
 
 # coco 20 evaluation
