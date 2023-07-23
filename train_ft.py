@@ -59,7 +59,11 @@ if __name__ == '__main__':
     
     dataset = FinetuneLoader(imdb, roidb, ratio_list, ratio_index, args.batch_size, \
                             imdb.num_classes, support_dir='supports/coco/{}/{}_image_novel'.format(args.seed,args.shots[:-1]), training=True, num_shot=args.shot)
-    
+    '''
+    support_dir='supports/coco/{finetune}/{3shots}_image_novel'
+    args.seed 
+    args.shots
+    '''
     train_size = len(roidb)
     print('{:d} roidb entries'.format(len(roidb)))
     sampler_batch = sampler(train_size, args.batch_size)

@@ -77,6 +77,9 @@ class coco_split(imdb):
       return osp.join(self._data_path, 'annotations', 'coco60_train', 'instances_' + self._year + '.json')
     elif 'shots' in self._image_set:
       return osp.join(self._data_path, 'annotations', 'ft', self._year, '{}_novel.json'.format(self._image_set[:-1]))
+      ''' 
+      /data_path/annotations/ft/custom_finetune/3shots_novel.jason.
+      '''
     else:
       raise Exception(f'set not defined {self._image_set}')
 

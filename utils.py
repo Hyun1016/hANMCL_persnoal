@@ -47,7 +47,7 @@ def parse_args():
     parser.add_argument('--fs', dest='fewshot', help='few-shot setting', default=True, action='store_true')
     parser.add_argument('--way', dest='way', help='num of support way', default=1, type=int)
     parser.add_argument('--shot', dest='shot', help='num of support shot', default=5, type=int)
-    parser.add_argument('--sup_dir', dest='sup_dir', help='directory of support images', default='coco/seed1/30shot_image_novel', type=str)
+    parser.add_argument('--sup_dir', dest='sup_dir', help='directory of support images', default='coco/custom_finetune/3shot_image_novel', type=str)
 
     
     # load checkpoints
